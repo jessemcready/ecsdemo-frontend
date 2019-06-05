@@ -18,7 +18,7 @@ class ApplicationController < ActionController::Base
       }
 
       if res.code == '200'
-        @text = "#{res.body} Jesse McReady and Chris Woodlief"
+        @text = res.body
       else
         @text = "no backend found"
       end
